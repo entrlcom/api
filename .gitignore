@@ -2,8 +2,8 @@
 
 !*.go
 !/.gitignore
-!/mintlify
-!/openapi
+!/mintlify/**
+!/openapi/**
 !/Makefile
 !/mint.json
 

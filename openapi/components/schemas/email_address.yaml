@@ -1,0 +1,5 @@
+description: Email Address
+type: string
+minLength: 6
+maxLength: 254
+example: mail@example.com

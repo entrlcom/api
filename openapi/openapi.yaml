@@ -1,0 +1,25 @@
+openapi: 3.1.0
+info:
+  title: Frontend API
+  description: |
+    This
+    API.
+  license:
+    name: "MIT"
+  version: 1.0.0
+paths:
+  /sign-up-with-email-address-and-password:
+    $ref: paths/sign-up-with-email-address-and-password.yaml
+jsonSchemaDialect: https://spec.openapis.org/oas/3.1/dialect/base
+security: []
+servers:
+  - url: https://api.entrlcom.cn
+    description: China
+  - url: https://api.entrlcom.de
+    description: Germany
+  - url: https://api.entrlcom.ru
+    description: Russia
+  - url: https://api.entrlcom.us
+    description: United States
+tags: []
+webhooks: {}
