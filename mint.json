@@ -1,41 +1,50 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+  "background": {
+    "style": "gradient"
   },
-  "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
     "anchors": {
       "from": "#0D9373",
       "to": "#07C983"
-    }
+    },
+    "background": {
+      "light": "#FFFFFF",
+      "dark": "#090D0D"
+    },
+    "dark": "#0D9373",
+    "light": "#07C983",
+    "primary": "#0D9373"
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+  "favicon": "/mintlify/favicon.svg",
+  "layout": "topnav",
+  "logo": {
+    "dark": "/mintlify/logo/dark.svg",
+    "light": "/mintlify/logo/light.svg"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
+  "modeToggle": {
+    "default": "light",
+    "isHidden": false
+  },
+  "name": "Starter Kit",
+  "rounded": "default",
+  "sidebar": {
+    "items": "container"
+  },
+  "theme": "prism",
+  "topbar": {
+    "style": "default"
+  },
   "anchors": [
+    {
+      "name": "API",
+      "icon": "square-terminal",
+      "url": "mintlify/openapi"
+    },
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "mintlify/sdk"
     },
     {
       "name": "Community",
@@ -48,44 +57,96 @@
       "url": "https://mintlify.com/blog"
     }
   ],
+  "feedback": {
+    "raiseIssue": true,
+    "suggestEdit": true,
+    "thumbsRating": true
+  },
+  "footerSocials": {
+    "discord": "https://entrlcom.org/",
+    "facebook": "https://entrlcom.org/",
+    "github": "https://github.com/entrlcom",
+    "hacker-news": "https://entrlcom.org/",
+    "instagram": "https://entrlcom.org/",
+    "linkedin": "https://entrlcom.org/",
+    "slack": "https://entrlcom.org/",
+    "website": "https://entrlcom.org/",
+    "x": "https://entrlcom.org/",
+    "youtube": "https://entrlcom.org/"
+  },
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "API",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "mintlify/openapi/sign-up-with-email-address-and-password"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "SDK",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "mintlify/sdk/flutter",
+        "mintlify/sdk/go",
+        "mintlify/sdk/java",
+        "mintlify/sdk/kotlin",
+        "mintlify/sdk/swift"
       ]
     }
   ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+  "search": {
+    "location": "top"
+  },
+  "tabs": [],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://dashboard.mintlify.com"
+  },
+  "topbarLinks": [
+    {
+      "name": "Status",
+      "url": "https://entrlcom.instatus.com/"
+    },
+    {
+      "name": "Support",
+      "url": "mailto:hi@mintlify.com"
+    }
+  ],
+  "versions": [
+    "1.0.0"
+  ],
+  "api": {
+    "auth": {
+      "method": "key",
+      "name": "token",
+      "inputPrefix": ""
+    },
+    "baseUrl": [
+      "https://api.entrlcom.cn/",
+      "https://api.entrlcom.de/",
+      "https://api.entrlcom.ru/",
+      "https://api.entrlcom.us/"
+    ],
+    "paramFields": {
+      "expanded": "none"
+    },
+    "playground": {
+      "mode": "show",
+      "disableProxy": true
+    },
+    "request": {
+      "example": {
+        "languages": [
+          "bash",
+          "go"
+        ],
+        "showOptionalParams": false
+      }
+    }
+  },
+  "openapi": ["/mintlify/openapi.yaml"],
+  "analytics": {},
+  "integrations": {},
+  "redirects": [],
+  "seo": {
+    "indexHiddenPages": false
   }
 }
