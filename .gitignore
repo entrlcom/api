@@ -1,0 +1,10 @@
+*
+
+!*.go
+!/.gitignore
+!/mintlify
+!/openapi
+!/Makefile
+!/mint.json
+
+!*/
